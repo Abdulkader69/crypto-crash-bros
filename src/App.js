@@ -1,7 +1,9 @@
+import { Welcome } from './components/Welcome';
+
 function App() {
   return (
-    <div className="crypto-landing-page text-3xl">
-      landing page
+    <div className="crypto-landing-page">
+      <Welcome/>
     </div>
   );
 }
