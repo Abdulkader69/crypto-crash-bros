@@ -78,8 +78,8 @@ export const Footer = () => {
                         </div>
                         <div className="col basis-2/4 max-w-[50%] lg:basis-full lg:max-w-full px-[15px]">
                             <p id="terms" className="copyright text-right">
-                                <a className="link" href="#/terms">BAYC Terms &amp; Conditions</a><br />
-                                <a className="link" href="#/mayc/terms">MAYC Terms &amp; Conditions</a>
+                                <a className="link text-[10px] text-Brand underline hover:text-white" href="#/terms">BAYC Terms &amp; Conditions</a><br />
+                                <a className="link text-[10px] text-Brand underline hover:text-white" href="#/mayc/terms">MAYC Terms &amp; Conditions</a>
                             </p>
                         </div>
                     </div>
