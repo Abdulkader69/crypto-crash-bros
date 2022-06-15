@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 export const Welcome = () => {
   return (
@@ -73,7 +74,7 @@ export const Welcome = () => {
                                         THE BORED APE<br />
                                         YACHT CLUB
                                     </h1>
-                                    <button className="bayc-button mb-6 w-full bg-[#bfc500] hover:bg-white rounded-lg text-black border-0 font-bold text-base p-[5%] m-auto duration-[.3s]" type="button">ENTER</button>
+                                    <Link to="/home" className="bayc-button flex items-center justify-center mb-6 w-full bg-[#bfc500] hover:bg-white rounded-lg text-black border-0 font-bold text-base p-[5%] m-auto duration-[.3s]" type="button">ENTER</Link>
                                 </div>
                                 <div className="scroll m-auto pr-0 col basis-1/6 relative">
                                     <div className="rotate my-auto absolute translate-x-[-50%] translate-y-[-50%] rotate-[-90deg] w-max top-2/4 left-2/4 text-[11.2px] font-medium italic text-white opacity-25 animate-pulse duration-[1.3s] tracking-wider leading-[.6em]">← SCROLL DOWN</div>

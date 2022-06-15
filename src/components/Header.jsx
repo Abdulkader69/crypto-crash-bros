@@ -1,12 +1,13 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 export const Header = () => {
   return (
     <nav id="nav" className="navbar bg-black px-4 lg:px-8 py-2 w-full max-w-[1200px] m-auto sticky top-0 z-[1020] flex flex-wrap md:flex-nowrap items-center justify-between md:justify-start">
 
-        <a href="#/" id="bayc-brand" className="navbar-brand inline-block py-[5px] mr-4 whitespace-nowrap">
+        <Link to="/" id="bayc-brand" className="navbar-brand inline-block py-[5px] mr-4 whitespace-nowrap">
             <img src="https://ik.imagekit.io/bayc/assets/bayc-logo-z.png" className="inline-block align-top h-[75px] w-auto" alt="bored ape logo" height="75px" width="auto" />
-        </a>
+        </Link>
 
         <button aria-controls="responsive-navbar-nav" id="nav-toggle" type="button" aria-label="Toggle navigation" className="navbar-dark navbar-toggler collapsed text-white py-1 px-3">
             <span className="navbar-toggler-icon bg-[url()] block w-[30px] h-[30px] align-middle content-['']"></span>
