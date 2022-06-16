@@ -1,7 +1,7 @@
 import { Routes, Route, useLocation } from "react-router-dom";
 import { AnimatePresence } from 'framer-motion';
 import { BathRoom } from './components/BathRoom';
-import { CommunityTools } from './components/CommunityTools';
+// import { CommunityTools } from './components/CommunityTools';
 import { Header } from './components/Header';
 import { RoadMapActivations } from './components/RoadMapActivations';
 import { Specs } from './components/Specs';
@@ -12,7 +12,7 @@ import AnimatedPage from "./AnimatedPage";
 import { Footer } from './components/Footer';
 import { Banner } from './components/Banner';
 import { YachtClub } from './components/YachtClub';
-import { FairDistribution } from './components/FairDistribution';
+// import { FairDistribution } from './components/FairDistribution';
 import { BuyAnApe } from './components/BuyAnApe';
 import AnimatedIMG from './assets/images/banner-animation.gif'
 
@@ -31,13 +31,13 @@ export const Home = () => {
       <AnimatedPage>
         <Banner/>
         <YachtClub/>
-        <FairDistribution/>
+        {/* <FairDistribution/> */}
         <BuyAnApe/>
         <Specs/>
         <WelcomeClub/>
         <BathRoom/>
         <RoadMapActivations/>
-        <CommunityTools/>
+        {/* <CommunityTools/> */}
         <Team/>
       </AnimatedPage>
     </div>

@@ -1,19 +1,19 @@
 import React from 'react';
-import WC1 from '../assets/images/icon1.webp'
-import WC2 from '../assets/images/icon2.webp'
-import WC3 from '../assets/images/icon3.webp'
-import WC4 from '../assets/images/icon4.webp'
-import WC5 from '../assets/images/icon5.webp'
+// import WC1 from '../assets/images/icon1.webp'
+// import WC2 from '../assets/images/icon2.webp'
+// import WC3 from '../assets/images/icon3.webp'
+// import WC4 from '../assets/images/icon4.webp'
+// import WC5 from '../assets/images/icon5.webp'
 
 export const WelcomeClub = () => {
   return (
     <div className='road-map-section'>
         <div className="max-w-[1132px] m-auto px-4 pt-12 mt-12 border-t border-solid border-Border">
-            <div className="row pb-5 max-w-[840px]">
-                <h2 className='mb-4 text-3xl text-white font-extrabold italic'>WELCOME TO THE CLUB</h2>
-                <p className='mb-4 text-base text-justify text-white'>When you buy a Bored Ape, you’re not simply buying an avatar or a provably-rare piece of art. You are gaining membership access to a club whose benefits and offerings will increase over time. Your Bored Ape can serve as your digital identity, and open digital doors for you.</p>
+            <div className="row md:pb-5 max-w-[840px]">
+                <h2 className='mb-4 text-2xl md:text-3xl text-white font-extrabold italic'>Launch:</h2>
+                <p className='mb-4 text-sm md:text-base text-justify text-white'>To gain access to mint a Crypto Crash Bros, you will be whitelisted for the mint. There are 3 minting categories: OG Whitelist Minting (FREE - 1 per wallet); Membership Whitelist Minting (0.02ETH = $20 - 5 per wallet) and Public Mint (0.03ETH $30 -10 per wallet).</p>
             </div>
-            <div className="row grid grid-cols-5 gap-14">
+            {/* <div className="row grid grid-cols-5 gap-14">
                 <div className="item">
                     <div className="icon h-44 flex items-center m-auto px-4 mb-6">
                         <img className='m-auto max-w-full h-full' src={WC1} alt="WC1" />
@@ -54,7 +54,7 @@ export const WelcomeClub = () => {
                         Gain additional benefits through roadmap activations
                     </p>
                 </div>
-            </div>
+            </div> */}
         </div>
     </div>
   )

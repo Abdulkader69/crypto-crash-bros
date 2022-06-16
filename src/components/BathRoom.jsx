@@ -6,13 +6,12 @@ export const BathRoom = () => {
     <div className='bathRoom-section'>
         <div className="max-w-[1132px] m-auto px-4 pt-12 mt-12 border-t border-solid border-Border">
             <div className="row flex flex-wrap">
-                <div className="left w-[80%] pr-20">
-                    <h2 className='mb-4 text-3xl text-white font-extrabold italic'>THE BATHROOM</h2>
-                    <p className='mb-4 text-base text-justify text-white'>The BAYC Bathroom will become operational once the presale period is over. It contains a canvas accessible only to wallets containing at least one ape. Like any good dive bar bathroom, this is the place to draw, scrawl, or write expletives.</p>
-                    <p className='mb-4 text-base text-justify text-white'>Each ape-holder will be able to paint a pixel on the bathroom wall every fifteen minutes. Think of it as a collaborative art experiment for the cryptosphere. A members-only canvas for the discerning minds of crypto twitter.</p>
-                    <p className='mb-4 text-base text-justify text-white'>We're pretty sure it's going to be full of dicks.</p>
+                <div className="left w-full md:w-[80%] md:pr-20">
+                    <h2 className='mb-4 text-2xl md:text-3xl text-white font-extrabold italic'>Membership</h2>
+                    <p className='mb-4 text-sm md:text-base text-justify text-white'>Crypto Crash Bros will unlock access to private membership, alphas, and upcoming future drops. Once the Crypto Crash Bros launches, the team will hit the ground running to create a second collection that will be given out to V1 holders for free. This will be followed by an erc20 token. All of these benefits and more will be unlocked through Crypto Crash Bros membership.</p>
+                    <p className='mb-4 text-sm md:text-base text-justify text-white'>You can join our discord to discuss with us and learn more about our plans.</p>
                 </div>
-                <div className="right w-[20%]">
+                <div className="right w-full md:w-[20%] mt-5 md:mt-0">
                     <img className='max-w-[90%] m-auto' src={Toilet} alt="Toilet" />
                 </div>
             </div>

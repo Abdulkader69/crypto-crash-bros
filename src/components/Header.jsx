@@ -26,7 +26,7 @@ export const Header = () => {
                 <a id="nav-link" title="PROVENANCE" href="#/provenance" data-rb-event-key="/provenance" className="nav-link text-white text-[8px] italic font-medium tracking-[1.2px] text-end duration-[.15s] md:p-2 lg:m-[10px] hover:text-[#bfc500]">PROVENANCE</a>
                 
                 <div className="nav-item dropdown">
-                    <a aria-haspopup="true" aria-expanded="false" id="nav-dropdown" href="#" className="dropdown-toggle nav-link text-white text-[8px] italic font-medium tracking-[1.2px] text-end duration-[.15s] md:p-2 lg:m-[10px] block hover:text-[#bfc500]" role="button">MEMBERS</a>
+                    <a aria-haspopup="true" aria-expanded="false" id="nav-dropdown" href="/" className="dropdown-toggle nav-link text-white text-[8px] italic font-medium tracking-[1.2px] text-end duration-[.15s] md:p-2 lg:m-[10px] block hover:text-[#bfc500]" role="button">MEMBERS</a>
 
                     
                 </div>
