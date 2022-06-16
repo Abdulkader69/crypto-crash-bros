@@ -2,7 +2,7 @@ import React from 'react'
 
 export const BuyAnApe = () => {
   return (
-    <div className='fair-distribution-section'>
+    <div className='fair-distribution-section' id='ape'>
         <div className="max-w-[1132px] m-auto px-4 pt-12 mb-6">
             <div className="row">
                 <div id="buy-an-ape" className="buy-token-container">

@@ -6,7 +6,7 @@ import Team4 from '../assets/images/4-sass.webp'
 
 export const Team = () => {
   return (
-    <div className='team-section'>
+    <div className='team-section' id='team'>
         <div className="max-w-[1132px] m-auto px-4 pt-12 mt-12 border-t border-solid border-Border">
             <div className="row flex flex-wrap">
                 <div className="left w-full md:w-[70%] md:pr-20">

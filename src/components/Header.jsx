@@ -1,35 +1,30 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { Link as ScrollLink } from 'react-scroll';
 
 export const Header = () => {
+    const [showMenu, setShowMenu] = useState(false);
   return (
+    <>
     <nav id="nav" className="navbar bg-black px-4 lg:px-8 py-2 w-full max-w-[1200px] m-auto sticky top-0 z-[1020] flex flex-wrap md:flex-nowrap items-center justify-between md:justify-start">
 
-        <Link to="/" id="bayc-brand" className="navbar-brand inline-block py-[5px] mr-4 whitespace-nowrap">
-            <img src="https://ik.imagekit.io/bayc/assets/bayc-logo-z.png" className="inline-block align-top h-[75px] w-auto" alt="bored ape logo" height="75px" width="auto" />
+        <Link to="/" id="bayc-brand" className="navbar-brand inline-block py-[5px] mr-4 whitespace-nowrap cursor-pointer">
+            <img src="https://ik.imagekit.io/bayc/assets/bayc-logo-z.png" className="inline-block align-top h-[50px] md:h-[75px] w-auto cursor-pointer" alt="bored ape logo" height="75px" width="auto" />
         </Link>
-
-        <button aria-controls="responsive-navbar-nav" id="nav-toggle" type="button" aria-label="Toggle navigation" className="navbar-dark navbar-toggler collapsed text-white py-1 px-3">
-            <span className="navbar-toggler-icon bg-[url()] block w-[30px] h-[30px] align-middle content-['']"></span>
-        </button>
 
         <div className="navbar-collapse collapse text-white hidden md:flex basis-full grow items-center">
             <div className="navbar-nav flex flex-row justify-end w-full" id="nav-bar">
-                <a id="nav-link" title="BUY AN APE" href="#/home#buy-an-ape" className="nav-link text-white text-[8px] italic font-medium tracking-[1.2px] text-end duration-[.15s] md:p-2 lg:m-[10px] hover:text-[#bfc500]">BUY AN APE</a>
+                <ScrollLink to="ape" spy={true} smooth={true} offset={-80} duration={500} title="BUY AN APE" className="nav-link cursor-pointer text-white text-[8px] italic font-medium tracking-[1.2px] text-end duration-[.15s] md:p-2 lg:m-[10px] hover:text-[#bfc500]">BUY AN APE</ScrollLink>
                 
-                <a id="nav-link" title="ROADMAP" href="#/home#roadmap" className="nav-link text-white text-[8px] italic font-medium tracking-[1.2px] text-end duration-[.15s] md:p-2 lg:m-[10px] hover:text-[#bfc500]">ROADMAP</a>
+                <ScrollLink to="roadMap" spy={true} smooth={true} offset={-80} duration={500} title="ROADMAP" className="nav-link cursor-pointer text-white text-[8px] italic font-medium tracking-[1.2px] text-end duration-[.15s] md:p-2 lg:m-[10px] hover:text-[#bfc500]">ROADMAP</ScrollLink>
                 
-                <a id="nav-link" title="TEAM" href="#/home#team" className="nav-link text-white text-[8px] italic font-medium tracking-[1.2px] text-end duration-[.15s] md:p-2 lg:m-[10px] hover:text-[#bfc500]">TEAM</a>
+                <ScrollLink to="team" spy={true} smooth={true} offset={-80} duration={500} className="nav-link cursor-pointer text-white text-[8px] italic font-medium tracking-[1.2px] text-end duration-[.15s] md:p-2 lg:m-[10px] hover:text-[#bfc500]">TEAM</ScrollLink>
                 
-                <a id="nav-link" title="GALLERY" href="#/gallery" data-rb-event-key="/gallery" className="nav-link text-white text-[8px] italic font-medium tracking-[1.2px] text-end duration-[.15s] md:p-2 lg:m-[10px] hover:text-[#bfc500]">GALLERY</a>
+                <a title="GALLERY" href="/home" data-rb-event-key="/gallery" className="nav-link cursor-pointer text-white text-[8px] italic font-medium tracking-[1.2px] text-end duration-[.15s] md:p-2 lg:m-[10px] hover:text-[#bfc500]">GALLERY</a>
                 
-                <a id="nav-link" title="PROVENANCE" href="#/provenance" data-rb-event-key="/provenance" className="nav-link text-white text-[8px] italic font-medium tracking-[1.2px] text-end duration-[.15s] md:p-2 lg:m-[10px] hover:text-[#bfc500]">PROVENANCE</a>
+                <a title="PROVENANCE" href="/home" data-rb-event-key="/provenance" className="nav-link cursor-pointer text-white text-[8px] italic font-medium tracking-[1.2px] text-end duration-[.15s] md:p-2 lg:m-[10px] hover:text-[#bfc500]">PROVENANCE</a>
                 
-                <div className="nav-item dropdown">
-                    <a aria-haspopup="true" aria-expanded="false" id="nav-dropdown" href="/" className="dropdown-toggle nav-link text-white text-[8px] italic font-medium tracking-[1.2px] text-end duration-[.15s] md:p-2 lg:m-[10px] block hover:text-[#bfc500]" role="button">MEMBERS</a>
-
-                    
-                </div>
+                <a href="/home" className="dropdown-toggle nav-link cursor-pointer text-white text-[8px] italic font-medium tracking-[1.2px] text-end duration-[.15s] md:p-2 lg:m-[10px] block hover:text-[#bfc500]" role="button">MEMBERS</a>
             </div>
             <div className="navbar-nav hidden lg:flex flex-row ml-[10px] mr-5 w-max" id="nav-social">
                 {/* <a href="https://www.youtube.com/channel/UCB6R9NAjkgxQi_QEkc4O25Q">
@@ -76,7 +71,24 @@ export const Header = () => {
                 </a>
             </div>
         </div>
-
+        <div className="navigator block md:hidden">
+            <button type='button' className='p-2 relative' onClick={() => setShowMenu((prevMode) => !prevMode)}>
+                <span className={`w-5 h-[2px] bg-white block relative transition ease-in mb-1 ${showMenu ? 'rotate-45 top-[6px]' : 'rotate-0'}`} />
+                <span className={`w-5 h-[2px] bg-white block relative transition ease-in mb-1 ${showMenu ? '-rotate-45' : 'rotate-0'}`} />
+                <span className={`w-5 h-[2px] bg-white block relative transition ease-in ${showMenu ? 'opacity-0' : 'opacity-100'}`} />
+            </button>
+        </div>
     </nav>
+    <div className={`mobile-menu-items opacity-100 md:opacity-0 fixed w-full h-[calc(100%-64px)] top-[64px] px-4 bg-[rgba(35,35,35)] ${showMenu ? 'right-0' : '-right-full'}`}>
+        <ul className='block mt-10'>
+            <li className='my-4'><ScrollLink onClick={() => setShowMenu((prevMode) => !prevMode)} className="cursor-pointer py-2 text-lg text-white" to="ape" spy={true} smooth={true} duration={500}>BUY AN APE</ScrollLink></li>
+            <li className='my-4'><ScrollLink onClick={() => setShowMenu((prevMode) => !prevMode)} className="cursor-pointer py-2 text-lg text-white" to="roadMap" spy={true} smooth={true} duration={500}>ROADMAP</ScrollLink></li>
+            <li className='my-4'><ScrollLink onClick={() => setShowMenu((prevMode) => !prevMode)} className="cursor-pointer py-2 text-lg text-white" to="team" spy={true} smooth={true} duration={500}>TEAM</ScrollLink></li>
+            <li className='my-4'><a href='/home' onClick={() => setShowMenu((prevMode) => !prevMode)} className="cursor-pointer py-2 text-lg text-white">GALLERY</a></li>
+            <li className='my-4'><a href='/home' onClick={() => setShowMenu((prevMode) => !prevMode)} className="cursor-pointer py-2 text-lg text-white">PROVENANCE</a></li>
+            <li className='my-4'><a href='/home' onClick={() => setShowMenu((prevMode) => !prevMode)} className="cursor-pointer py-2 text-lg text-white">MEMBERS</a></li>
+        </ul>
+    </div>
+    </>
   )
 }

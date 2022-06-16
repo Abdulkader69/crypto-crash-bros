@@ -3,7 +3,7 @@ import Shirt from '../assets/images/shirt.webp'
 
 export const RoadMapActivations = () => {
   return (
-    <div className='road-map-section'>
+    <div className='road-map-section' id='roadMap'>
         <div className="max-w-[1132px] m-auto px-4 pt-12 mt-12 border-t border-solid border-Border">
             <div className="row md:pb-5 max-w-[840px]">
                 <h2 className='mb-4 text-2xl md:text-3xl text-white font-extrabold italic'>Mint Procedure:</h2>
