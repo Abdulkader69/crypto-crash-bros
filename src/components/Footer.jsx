@@ -28,7 +28,7 @@ export const Footer = () => {
                 <div className="col basis-1/3 order-12 my-auto text-center px-[15px]">
                     <div className="row flex flex-wrap mx-[-15px]">
                         <div className="text-right col sm:basis-full sm:max-w-full px-[15px]">
-                            <a className='inline-block' href="https://www.youtube.com/channel/UCB6R9NAjkgxQi_QEkc4O25Q">
+                            {/* <a className='inline-block' href="https://www.youtube.com/channel/UCB6R9NAjkgxQi_QEkc4O25Q">
                                 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 310 310" className='w-[16px] m-5 mr-0 text-end duration-[.3s] fill-white hover:fill-[#bfc500]'>
                                     <g id="XMLID_822_">
@@ -40,18 +40,18 @@ export const Footer = () => {
                                         C204.394,157.263,202.325,160.684,199.021,162.41z"/>
                                     </g>
                                 </svg>
-                            </a>
-                            <a className='inline-block' href="">
+                            </a> */}
+                            {/* <a className='inline-block' href="">
                                 <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" className='w-[16px] m-5 mr-0 text-end duration-[.3s]'>
                                     <path className='fill-white hover:fill-[#bfc500]' d="M17.34,5.46h0a1.2,1.2,0,1,0,1.2,1.2A1.2,1.2,0,0,0,17.34,5.46Zm4.6,2.42a7.59,7.59,0,0,0-.46-2.43,4.94,4.94,0,0,0-1.16-1.77,4.7,4.7,0,0,0-1.77-1.15,7.3,7.3,0,0,0-2.43-.47C15.06,2,14.72,2,12,2s-3.06,0-4.12.06a7.3,7.3,0,0,0-2.43.47A4.78,4.78,0,0,0,3.68,3.68,4.7,4.7,0,0,0,2.53,5.45a7.3,7.3,0,0,0-.47,2.43C2,8.94,2,9.28,2,12s0,3.06.06,4.12a7.3,7.3,0,0,0,.47,2.43,4.7,4.7,0,0,0,1.15,1.77,4.78,4.78,0,0,0,1.77,1.15,7.3,7.3,0,0,0,2.43.47C8.94,22,9.28,22,12,22s3.06,0,4.12-.06a7.3,7.3,0,0,0,2.43-.47,4.7,4.7,0,0,0,1.77-1.15,4.85,4.85,0,0,0,1.16-1.77,7.59,7.59,0,0,0,.46-2.43c0-1.06.06-1.4.06-4.12S22,8.94,21.94,7.88ZM20.14,16a5.61,5.61,0,0,1-.34,1.86,3.06,3.06,0,0,1-.75,1.15,3.19,3.19,0,0,1-1.15.75,5.61,5.61,0,0,1-1.86.34c-1,.05-1.37.06-4,.06s-3,0-4-.06A5.73,5.73,0,0,1,6.1,19.8,3.27,3.27,0,0,1,5,19.05a3,3,0,0,1-.74-1.15A5.54,5.54,0,0,1,3.86,16c0-1-.06-1.37-.06-4s0-3,.06-4A5.54,5.54,0,0,1,4.21,6.1,3,3,0,0,1,5,5,3.14,3.14,0,0,1,6.1,4.2,5.73,5.73,0,0,1,8,3.86c1,0,1.37-.06,4-.06s3,0,4,.06a5.61,5.61,0,0,1,1.86.34A3.06,3.06,0,0,1,19.05,5,3.06,3.06,0,0,1,19.8,6.1,5.61,5.61,0,0,1,20.14,8c.05,1,.06,1.37.06,4S20.19,15,20.14,16ZM12,6.87A5.13,5.13,0,1,0,17.14,12,5.12,5.12,0,0,0,12,6.87Zm0,8.46A3.33,3.33,0,1,1,15.33,12,3.33,3.33,0,0,1,12,15.33Z"/>
                                 </svg>
-                            </a>
-                            <a className='inline-block' href="https://discord.gg/3P5K3dzgdB">
+                            </a> */}
+                            <a className='inline-block' href="https://discord.gg/TBA" target="_blank" rel="noreferrer">
                                 <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" className='w-[16px] m-5 mr-0 text-end duration-[.3s] fill-white hover:fill-[#bfc500]'>
                                     <path d="M18.942 5.556a16.299 16.299 0 0 0-4.126-1.297c-.178.321-.385.754-.529 1.097a15.175 15.175 0 0 0-4.573 0 11.583 11.583 0 0 0-.535-1.097 16.274 16.274 0 0 0-4.129 1.3c-2.611 3.946-3.319 7.794-2.965 11.587a16.494 16.494 0 0 0 5.061 2.593 12.65 12.65 0 0 0 1.084-1.785 10.689 10.689 0 0 1-1.707-.831c.143-.106.283-.217.418-.331 3.291 1.539 6.866 1.539 10.118 0 .137.114.277.225.418.331-.541.326-1.114.606-1.71.832a12.52 12.52 0 0 0 1.084 1.785 16.46 16.46 0 0 0 5.064-2.595c.415-4.396-.709-8.209-2.973-11.589zM8.678 14.813c-.988 0-1.798-.922-1.798-2.045s.793-2.047 1.798-2.047 1.815.922 1.798 2.047c.001 1.123-.793 2.045-1.798 2.045zm6.644 0c-.988 0-1.798-.922-1.798-2.045s.793-2.047 1.798-2.047 1.815.922 1.798 2.047c0 1.123-.793 2.045-1.798 2.045z"/>
                                 </svg>
                             </a>
-                            <a className='inline-block' href="https://twitter.com/BoredApeYC">
+                            <a className='inline-block' href="Twitter.com/CryptoCrashBros" target="_blank" rel="noreferrer">
                                 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
                                 viewBox="0 0 310 310" className='w-[16px] m-5 mr-0 text-end duration-[.3s] fill-white hover:fill-[#bfc500]'>
                                     <g id="XMLID_826_">

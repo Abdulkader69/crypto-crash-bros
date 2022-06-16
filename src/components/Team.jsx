@@ -11,23 +11,23 @@ export const Team = () => {
             <div className="row flex flex-wrap">
                 <div className="left w-[70%] pr-20">
                     <h2 className='mb-4 text-3xl text-white font-extrabold italic'>THE TEAM</h2>
-                    <p className='mb-4 text-base text-justify text-white'>BAYC was created by four friends who set out to make some dope apes, test our skills, and try to build something (ridiculous).</p>
+                    <p className='mb-4 text-base text-justify text-white'> The team consists of high-quality builders in web3 and are listed below:</p>
                     <p className='mb-4 text-base text-justify text-white'>
-                        <span className='text-Brand'>GARGAMEL. </span>
-                        <span className='italic'>STARCRAFT OBSESSED. EATS SMURFS.</span>
+                        <span className='text-Brand'>TheGodfather: </span>
+                        <span className='italic'>Founder</span>
                     </p>
                     <p className='mb-4 text-base text-justify text-white'>
-                        <span className='text-Brand'>GORDON GONER. </span>
-                        <span className='italic'>REFORMED LEVERAGE ADDICT.</span>
+                        <span className='text-Brand'>Nefertiti: </span>
+                        <span className='italic'>Community advisor</span>
                     </p>
                     <p className='mb-4 text-base text-justify text-white'>
-                        <span className='text-Brand'>EMPEROR TOMATO KETCHUP. </span>
-                        <span className='italic'>SPENT ALL THEIR MONEY ON FIRST PRESSES AND PET-NAT.</span>
+                        <span className='text-Brand'>BlackRock: </span>
+                        <span className='italic'>Chief Mod</span>
                     </p>
-                    <p className='mb-4 text-base text-justify text-white'>
+                    {/* <p className='mb-4 text-base text-justify text-white'>
                         <span className='text-Brand'>NO SASS. </span>
                         <span className='italic'>HERE FOR THE APES. NOT FOR THE SASS.</span>
-                    </p>
+                    </p> */}
                 </div>
                 <div className="right w-[30%] grid grid-cols-2 gap-5">
                     <div className="image"><img src={Team1} alt="Team1" /></div>

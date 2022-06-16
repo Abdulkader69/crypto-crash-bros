@@ -6,12 +6,16 @@ export const Welcome = () => {
     <div className="text-white">
         <div className="transition-[opacity,transform] duration-[.0s] ease-in transform-none opacity-100">
             <div className="common-container w-full max-w-[1200px] m-auto">
-                <div className="container w-full px-[15px] mx-auto sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1140px]">
+                <div className="container w-full px-[15px] mx-auto max-w-[1140px]">
                     <div className="row flex flex-wrap mr-[-15px] ml-[-15px]">
-                        <div className="col basis-full max-w-full lg:basis-1/3 lg:max-w-[33.333333%] lg:ml-[33.333333%]">
+                        <div className="col w-[calc(100%-320px)]">
                             <img className="img-fluid relative mb-[-37px] z-[1] block pt-6 mx-auto" src="https://ik.imagekit.io/bayc/assets/bayc-logo.png" alt="bayc header logo" width="300px" height="300px" />
                         </div>
-                        <div className="col hidden lg:flex lg:basis-1/3 lg:max-w-[33.333333%] justify-end mt-6 mb-[-15px] px-[15px]">
+                        <div className="col max-w-xs flex justify-end mt-6 mb-[-15px] px-[15px]">
+                            <div className="menu flex items-center mr-5">
+                                <Link to="" className='mr-4'>FAQ</Link>
+                                <Link to="/mint">Mint</Link>
+                            </div>
                             <a href="https://www.youtube.com/channel/UCB6R9NAjkgxQi_QEkc4O25Q">
                                 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                                   viewBox="0 0 310 310" className='w-[16px] m-5 mr-0 text-end duration-[.3s] fill-white hover:fill-[#bfc500]'>
@@ -66,13 +70,13 @@ export const Welcome = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col basis-1/3 max-w-[33.333333%]">
+                        <div className="col basis-[40%] max-w-[40%]">
                             <div className="row welcome bg-black mt-[-265px] flex flex-wrap pt-6 relative">
                                 <div className="border-bottom basis-3/4 max-w-[75%] border-b-[1px] border-solid border-[#dee2e6] px-0 ml-4 lg:ml-0">
-                                    <h1 className="common-title mb-4 sticky text-[27.2px] font-extrabold italic leading-[2.041rem]">
+                                    <h1 className="common-title uppercase mb-4 sticky text-[27.2px] font-extrabold italic leading-[2.041rem]">
                                         WELCOME TO<br />
-                                        THE BORED APE<br />
-                                        YACHT CLUB
+                                        Crypto Crash Bros<br />
+                                        NFT Collection(CCB).
                                     </h1>
                                     <Link to="/home" className="bayc-button flex items-center justify-center mb-6 w-full bg-[#bfc500] hover:bg-white rounded-lg text-black border-0 font-bold text-base p-[5%] m-auto duration-[.3s]" type="button">ENTER</Link>
                                 </div>
