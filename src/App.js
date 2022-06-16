@@ -55,9 +55,9 @@ export const MintPage = () => {
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, nostrum odit. Architecto vero, possimus enim corrupti fugiat odit quod sed.</p>
                     </div>
                     <div className="counter flex items-center justify-between max-w-[230px] m-auto mb-5 -mt-3">
-                        <span className='text-3xl text-white font-bold w-5 h-5 cursor-pointer flex items-center justify-center'>-</span>
+                        <span className='text-3xl text-white font-bold w-8 h-8 border border-solid border-white cursor-pointer flex items-center justify-center'>-</span>
                         <span className='text-xl text-white font-bold'>10</span>
-                        <span className='text-2xl text-white font-bold w-5 h-5 cursor-pointer flex items-center justify-center'>+</span>
+                        <span className='text-2xl text-white font-bold w-8 h-8 border border-solid border-white cursor-pointer flex items-center justify-center'>+</span>
                     </div>
                     <div className="link flex items-center justify-center mb-2 max-w-[300px] m-auto">
                         <a className='roadmap-bg w-full text-center py-2 px-12 text-xs sm:text-base text-[rgba(255,244,55)] rounded-full font-bold inline-block border-2 border-solid border-Dark transition ease-in hover:bg-[rgba(255,244,55)] hover:text-Dark' href="https://magiceden.io/marketplace/dope_duck_club">Mint Now</a>

@@ -2,32 +2,33 @@ import React from 'react'
 
 export const Footer = () => {
   return (
-    <footer className="footer text-white w-full bg-black">
+    <footer className="footer text-white w-full bg-black pt-12 lg:pt-0">
         <div className="container-fluid footer-line w-full px-[15px] max-w-[90%] m-auto">
             <hr className="p-0 line" />
             <div className="row flex flex-wrap py-5">
 
-                <div className="col basis-1/3 order-[-1] my-auto px-[15px]">
-                    <div className="email-container p-0 text-left">
-                        <span className="email-label text-[13px] italic font-semibold text-white">GET ON THE LIST</span><br />
-                        <div className="d-flex email-flex">
-                            <br />
-                            {/* <form id="email-submit" method="post" name="mc-embedded-subscribe-form" target="_blank" className="email-form">
-                                <input id="email-address" className="m-0 email-input-text" type="email" placeholder="Email Address" name="EMAIL" required="" value="" />
-                                <div aria-hidden="true" style="position: absolute; left: -5000px;"><input type="text" name="b_c979ffabc41007fd79ffe121b_b785550a9e" tabindex="-1" value="" /></div>
-                                <button name="subscribe" className="email-submit" type="submit">→</button>
-                            </form> */}
+                <div className="col basis-full lg:basis-1/3 lg:order-[-1] my-auto px-[15px]">
+                    <div className="email-container py-8 lg:p-0 text-center lg:text-left">
+                        <span className="email-label text-xl lg:text-[13px] italic font-semibold text-white">GET ON THE LIST</span><br />
+                        <div className="flex email-flex pt-5 lg:pt-[10px]">
+                            <form id="email-submit" method="post" name="mc-embedded-subscribe-form" target="_blank" className="email-form flex w-[80%] m-auto lg:m-[unset]">
+
+                                <input id="email-address" className="m-0 email-input-text w-full p-[10px] lg:p-[2px] lg:pl-[10px] bg-[#272626] border-0 text-white text-base placeholder:text-[12px] lg:placeholder:text-[10px] placeholder:italic focus-visible:outline-0" type="email" placeholder="Email Address" name="EMAIL" required=""/>
+            
+                                <button name="subscribe" className="email-submit bg-[#4b4a4a] hover:bg-[#bfc500] border-0 px-5 py-[10px] text-white hover:text-black caret-transparent duration-[.3s] lg:p-[10px] leading-[0]" type="submit">→</button>
+
+                            </form>
                         </div>
                     </div>
                 </div>
 
-                <div className="col basis-1/3 px-[15px]">
-                    <img className="img-fluid footer-logo flex m-auto max-h-[200px] mt-0 h-auto max-w-full" src="https://ik.imagekit.io/bayc/assets/bayc-footer.png" alt="logo" />
+                <div className="col basis-full lg:basis-1/3 order-[-1] px-[15px]">
+                    <img className="img-fluid footer-logo flex m-auto max-h-[200px] mt-[-120px] lg:mt-0 h-auto max-w-full" src="https://ik.imagekit.io/bayc/assets/bayc-footer.png" alt="logo" />
                 </div>
 
-                <div className="col basis-1/3 order-12 my-auto text-center px-[15px]">
+                <div className="col basis-full lg:basis-1/3 order-12 my-auto text-center px-[15px]">
                     <div className="row flex flex-wrap mx-[-15px]">
-                        <div className="text-right col sm:basis-full sm:max-w-full px-[15px]">
+                        <div className="lg:text-right col basis-full max-w-full px-[15px]">
                             {/* <a className='inline-block' href="https://www.youtube.com/channel/UCB6R9NAjkgxQi_QEkc4O25Q">
                                 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 310 310" className='w-[16px] m-5 mr-0 text-end duration-[.3s] fill-white hover:fill-[#bfc500]'>
@@ -72,7 +73,7 @@ export const Footer = () => {
                             </a>
                         </div>
                         <div className="col basis-2/4 max-w-[50%] lg:basis-full lg:max-w-full px-[15px]">
-                            <p className="copyright text-right text-[10px] text-white">
+                            <p className="copyright text-left lg:text-right text-[10px] text-white">
                                 <span className="copy-left">© 2021 Yuga Labs LLC</span>
                             </p>
                         </div>
@@ -87,7 +88,7 @@ export const Footer = () => {
 
             </div>
         </div>
-        <div className="container-fluid w-full m-0 p-0">
+        <div className="container-fluid w-full m-0 pt-8 lg:p-0">
             <span className="last-line block border-b-[15px] border-solid border-[#bfc500]"></span>
         </div>
     </footer>
